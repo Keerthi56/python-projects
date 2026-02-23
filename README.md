@@ -13,6 +13,11 @@ This repository contains beginner Python projects created for practice.
 - Handles user input
 - Simple command-line program
 
+### 3. [Contact Book]([https://github.com/Keerthi56/python-projects/blob/main/bill_split_calculator](https://github.com/Keerthi56/python-projects/blob/main/contact_book))
+- Add, view, edit, and delete contacts
+- Stores contact details using a dictionary
+- Menu-driven command-line application
+
 ## Skills Used
 - Python
 - Functions
