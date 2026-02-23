@@ -1,0 +1,85 @@
+def display_menu():
+    print("Contact Book Menu:")
+    print("1. Add Contact")
+    print("2. View Contact")
+    print("3. Edit Contact")
+    print("4. Delete Contact")
+    print("5. List All Contacts")
+    print("6. Exit")
+
+def add_contact(contact_book):
+    contact_name = input()
+    phone = input()
+    email = input()
+    address = input()
+    if contact_name in contact_book:
+        print("Contact already exists!")
+        return
+    elif contact_name not in contact_book:
+        contact_book[contact_name] = {
+            "phone": phone,
+            "email": email,
+            "address": address
+        }
+    print("Contact added successfully!")
+
+def view_contact(contact_book):
+    contact_name = input()
+    if contact_name in contact_book:
+        print(f"Name: {contact_name}")
+        for key, value in contact_book[contact_name].items(): 
+            key = key.capitalize()
+            print(f"{key}: {value}")
+    if contact_name not in contact_book:
+        print("Contact not found!")
+
+def edit_contact(contact_book):
+    contact_name = input()
+    if contact_name in contact_book:
+        phone_new = input()
+        email_new = input()
+        address_new = input()
+        contact_book[contact_name]["phone"] = phone_new
+        contact_book[contact_name]["email"] = email_new
+        contact_book[contact_name]["address"] = address_new
+        print("Contact updated successfully!")
+    
+    elif contact_name not in contact_book:
+        print("Contact not found!")
+
+def delete_contact(contact_book):
+    contact_name = input()
+    if contact_name in contact_book:
+        del contact_book[contact_name]
+        print("Contact deleted successfully!")
+        
+    elif contact_name not in contact_book:
+        print("Contact not found!")
+
+def list_all_contacts(contact_book):
+    if len(contact_book) == 0:
+        print("No contacts available.")
+    elif len(contact_book) != 0:
+        for key, value in contact_book.items():
+            print(f"Name: {key}")
+            for key2, value2 in contact_book[key].items():
+                key2 = key2.capitalize()
+                print(f"{key2}: {value2}")
+            print("")
+            
+contact_book = {}
+while True:
+    display_menu()
+    menu_choice = int(input())
+    if menu_choice == 1:
+        add_contact(contact_book)
+    elif menu_choice == 2:
+        view_contact(contact_book)
+    elif menu_choice == 3:
+        edit_contact(contact_book)
+    elif menu_choice == 4:
+        delete_contact(contact_book)
+    elif menu_choice == 5:
+        list_all_contacts(contact_book)
+    elif menu_choice == 6:
+        break
