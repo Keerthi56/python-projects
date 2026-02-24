@@ -18,7 +18,7 @@ This repository contains beginner Python projects created for practice.
 - Stores contact details using a dictionary
 - Menu-driven command-line application
 
-### 4. [Vacation Filter](https://github.com/Keerthi56/python-projects/blob/main/vacation_filter))
+### 4. [Vacation Filter](https://github.com/Keerthi56/python-projects/blob/main/vacation_filter)
 - Getting inputs from the user/customer
 - Checking if package is suitable for the customer needs
 - Nested if statements to check the conditions
