@@ -22,6 +22,12 @@ This repository contains beginner Python projects created for practice.
 - Getting inputs from the user/customer
 - Checking if package is suitable for the customer needs
 - Nested if statements to check the conditions
+
+### 5. [Student Records Manager](https://github.com/Keerthi56/python-projects/blob/main/student_records_manager)
+- Stores student data
+- Tracks grades using sets
+- Calculates average grade
+- Filters top students
   
 ## Skills Used
 - Python
