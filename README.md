@@ -28,6 +28,12 @@ This repository contains beginner Python projects created for practice.
 - Tracks grades using sets
 - Calculates average grade
 - Filters top students
+
+### 6. [Inventory Management System](https://github.com/Keerthi56/python-projects/blob/main/inventory_management_system)
+- Manages product inventory
+- Updates stock levels
+- Checks product availability
+- Generates sales reports and revenue
   
 ## Skills Used
 - Python
